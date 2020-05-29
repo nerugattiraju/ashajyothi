@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+{%load staticfiles%}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Playball&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{%static "css/base.css"%}">
+    <style>
+* {box-sizing: border-box}
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.navbar {
+  width: 100%;
+  background-color: black;
+  opacity:0.6;
+  overflow: auto;
+  border-style: groove;
+  border-width:5px;
+}
+
+.navbar a {
+  float: left;
+  padding: 8px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 7%; /* Four links of equal widths */
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: green;
+}
+
+.navbar a.active {
+  background-color: #4CAF50;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+</style>
+  </head>
+  <body>
+  <div class="navbar">
+  <a  href="/home">Home</a>
+    <a href="/mysql">Gallery</a>
+    <a href="/donate">Donate</a>
+  <a href="/help">Help</a>
+    <a href="/contact">About us</a>
+    <a href="/contact1">Contact</a>
+    <a href="/dataa">Wikipedia</a>
+    <a href="/files">Document</a>
+    <a href="/catch">Activity</a>
+    <a href="/mdmd">Admin</a>
+  <a href="/accounts/login">Login</a>
+  <a href="/accounts/logout">Logout</a>
+</div>
+        {% block body_block %}
+
+        {%endblock%}
+  </body>
+</html>

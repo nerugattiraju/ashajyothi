@@ -1,0 +1,54 @@
+body{
+  background-image: url("/static/images/hh.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-margin:40px;
+  font-family: 'Playball';
+  margin-bottom:50px;
+  color:red;
+}
+h3{
+  color: #05f525;
+}
+.wrap{
+max-width:350px;
+border-radius:20px;
+margin:auto;
+background:rgba(0,0,0,0.8);
+box-sizing:border-box;
+padding:60px;
+color:#fff;
+margin-top:100px;
+
+}
+.jumbotron{
+   background-image: url("https://img.freepik.com/free-photo/smooth-dark-blue-with-black-vignette-studio-well-use-as-background-business-report-digital-website-template_1258-748.jpg?size=626&ext=jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+.container{
+background-image:url("https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+}
+.log{
+  text-align: center;
+}
+p{
+  font-size: 20px;
+}
+#raj{
+  color: black;
+}
+#raju{
+  color:#1907e0;
+  text-shadow: 20px;
+  font-size: 50px;
+  font-style:italic;
+
+}
+#raju1{
+  color:red;
+}
+#raju2{
+  font-size: 40px;
+  color:white;
+}

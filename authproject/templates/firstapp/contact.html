@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+{% extends "firstapp/base.html"%}
+{% block body_block %}
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Our Team Section</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<style>
+  import url('https://fonts.googleapis.com/css?family=Allura|Josefin+Sans');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.aaa{
+  background-image:url("/static/images/temple.jpg");
+
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.wrapper{
+  margin-top: 10%;
+}
+
+.wrapper h1{
+  font-family: 'Allura', cursive;
+  font-size: 52px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.team{
+  display: flex;
+  justify-content: center;
+  width: auto;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.team .team_member{
+  background: #fff;
+  margin: 5px;
+  margin-bottom: 50px;
+  width: 320px;
+  padding: 20px;
+  line-height: 20px;
+  color: #8e8b8b;
+  position: relative;
+}
+
+.team .team_member h3{
+  color: #81c644;
+  font-size: 26px;
+  margin-top: 50px;
+}
+
+.team .team_member p.role{
+  color: #ccc;
+  margin: 12px 0;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.team .team_member .team_img{
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.team .team_member .team_img img{
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+}
+</style>
+<body class="aaa">
+<div class="wrapper">
+  <h1><u><font color="white" style="font-family:Times"><b>Our Team</b></font></u></h1>
+  <div class="team">
+    <div class="team_member">
+      <div class="team_img">
+        <img src="/static/images/jyo1.png" alt="Team_image">
+      </div>
+      <h3><font color="black">N JYOTHI</font></h3>
+      <p class="role"><font color="gray">Volunteer</font></p>
+      <p><font color="black">D/O:</font>MUNIVENKATAPPA</p><br>
+      <p><font color="black">Address :</font>RAMASAMUDRAM</p><br>
+      <p><font color="black">Email:</font>njyothi689@gmail.com</p><br>
+     </div>
+    <div class="team_member">
+      <div class="team_img">
+        <img src="/static/images/swetha.png" alt="Team_image">
+      </div>
+      <h3><font color="black">KR SWETHA</font></h3>
+      <p class="role"><font color="gray">Volunteer</font></p>
+      <p><font color="black">W/O:</font>YS SHASHANK</p><br>
+      <p><font color="black">Address :</font>RAMASAMUDRAM</p><br>
+      <p><font color="black">Email:</font>swethareddeppa<br>@gmail.com</p><br>
+    </div>
+    <div class="team_member">
+      <div class="team_img">
+        <img src="/static/images/manasa.png" alt="Team_image">
+      </div>
+      <h3><font color="black">G MANASA</font></h3>
+      <p class="role"><font color="gray">Volunteer</font></p>
+      <p><font color="black">D/O:</font>G.VENKATA RAMANA</p><br>
+      <p><font color="black">Address :</font>RAMASAMUDRAM</p><br>
+      <p><font color="black">Email:</font>gvmanasa3@gmail.com</p><br>
+      </div>
+    <div class="team_member">
+      <div class="team_img">
+        <img src="/static/images/gnana.png" alt="Team_image">
+      </div>
+      <h3><font color="black">P GNANA PRASANNA</font></h3>
+      <p class="role"><font color="gray">Volunteer</font></p>
+      <p><font color="black">D/O:</font>P VENKATRAMANA</p><br>
+      <p><font color="black">Address :</font>RAMASAMUDRAM</p><br>
+      <p><font color="black">Email:</font>gnanaprasanna28<br>@gmail.com</p><br>
+      </div>
+    <div class="team_member">
+      <div class="team_img">
+        <img src="/static/images/suppi.png" alt="Team_image">
+      </div>
+      <h3><font color="black">KR SUPRAJA</font></h3>
+      <p class="role"><font color="gray">Volunteer</font></p>
+      <p><font color="black">D/O:</font>REDDEPPA</p><br>
+      <p><font color="black">Address :</font>RAMASAMUDRAM</p><br>
+      <p><font color="black">Email:</font>suprajareddeppa06<br>@gmail.com</p><br>
+      </div>
+    <div class="team_member">
+      <div class="team_img">
+        <img src="/static/images/rubiya.png" alt="Team_image">
+      </div>
+      <h3><font color="black">K RUBIYA</font></h3>
+      <p class="role"><font color="gray">Volunteer</font></p>
+      <p><font color="black">W/O:</font>K CHAND BASHA</p><br>
+      <p><font color="black">Address :</font>RAMASAMUDRAM</p><br>
+      <p><font color="black">Email:</font>R97333851@gmail.com</p><br>
+      </div>
+    <div class="team_member">
+      <div class="team_img">
+        <img src="/static/images/fayaz.png" alt="Team_image">
+      </div>
+      <h3><font color="black">K FAYAZ</font></h3>
+      <p class="role"><font color="gray">Volunteer</font></p>
+      <p><font color="black">S/O:</font>K CHAND BASHA</p><br>
+      <p><font color="black">Address:</font>RAMASAMUDRAM</p><br>
+      <p><font color="black">Email:</font>kfayazrsm@gmail.com</p><br>
+      <p><font color="black">Contact:</font>9573477637</p><br>
+    </div>
+    <div class="team_member">
+      <div class="team_img">
+        <img src="/static/images/kiran.png" alt="Team_image">
+      </div>
+      <h3><font color="black">S KIRAN</font></h3>
+      <p class="role"><font color="gray">Volunteer</font></p>
+      <p><font color="black">S/O:</font>KRISHNA MURTHY</p><br>
+      <p><font color="black">Address:</font>RAMASAMUDRAM</p><br>
+      <p><font color="black">Email:</font>skiranrsm@gmail.com</p><br>
+      <p><font color="black">Contact:</font>9398002429</p><br>
+    </div>
+    <div class="team_member">
+      <div class="team_img">
+        <img src="/static/images/chandra1.png" alt="Team_image">
+      </div>
+      <h3><font color="black">CHANDRASEKHAR</font></h3>
+      <p class="role"><font color="gray">Volunteer</font></p>
+      <p><font color="black">S/O:</font>VENKATRAMANA</p><br>
+      <p><font color="black">Address :</font>RAMASAMUDRAM</p><br>
+      <p><font color="black">Email:</font>j4kchds1@gmail.com</p><br>
+      <p><font color="black">Contact:</font>8073275481</p><br>
+    </div>
+    <div class="team_member">
+      <div class="team_img">
+        <img src="/static/images/naveen.png" alt="Team_image">
+      </div>
+      <h3><font color="black">C NAVEEN KUMAR</font></h3>
+      <p class="role"><font color="gray">Volunteer</font></p>
+      <p><font color="black">S/O:</font>VENKATACHALAPATHI</p><br>
+      <p><font color="black">Address :</font>RAMASAMUDRAM</p><br>
+      <p><font color="black">Email:</font>naveenkumarchintala333<br>@gmail.com</p><br>
+      <p><font color="black">Contact:</font>7760695766</p><br>
+    </div>
+    <div class="team_member">
+      <div class="team_img">
+        <img src="/static/images/vinay.png" alt="Team_image">
+      </div>
+      <h3><font color="black">R VINAY KUMAR</font></h3>
+      <p class="role"><font color="gray">Volunteer</font></p>
+      <p><font color="black">S/O:</font>MOHAN KUMAR</p><br>
+      <p><font color="black">Address :</font>RAMASAMUDRAM</p><br>
+      <p><font color="black">Email:</font>vinaynihal123@gmail.com</p><br>
+      <p><font color="black">Contact:</font>8310449972</p></div>
+    <div class="team_member">
+      <div class="team_img">
+        <img src="/static/images/bala.png" alt="Team_image">
+      </div>
+      <h3><font color="black">N BALAJI</font></h3>
+      <p class="role"><font color="gray">Volunteer</font></p>
+      <p><font color="black">S/O:</font>N BABU</p><br>
+      <p><font color="black">Address :</font>RAMASAMUDRAM</p><br>
+      <p><font color="black">Email:</font>nbalajigtm@gmail.com</p><br>
+      <p><font color="black">Contact:</font>9100747671</p></div>
+    <div class="team_member">
+      <div class="team_img">
+        <img src="/static/images/seena.png" alt="Team_image">
+      </div>
+      <h3><font color="black">M SEENU</font></h3>
+      <p class="role"><font color="gray">Volunteer</font></p>
+      <p><font color="black">S/O:</font>M GANGI REDDY</p><br>
+      <p><font color="black">Address :</font>RAMASAMUDRAM</p><br>
+      <p><font color="black">Email:</font>seenu1371996@gmail.com</p><br>
+      <p><font color="black">Contact:</font>7989982615</p></div>
+    <div class="team_member">
+      <div class="team_img">
+        <img src="/static/images/raju2.png" alt="Team_image">
+      </div>
+      <h3><font color="black">N RAJU</font></h3>
+      <p class="role"><font color="gray">Volunteer</font></p>
+      <p><font color="black">S/O:</font>ANJAPPA</p><br>
+      <p><font color="black">Address :</font>RAMASAMUDRAM</p><br>
+      <p><font color="black">Email:</font>nrajubasi@gmail.com</p><br>
+      <p><font color="black">Contact:</font>8106231890</p></div>
+  </div>
+</div>
+</body>
+</html>
+
+{% endblock %}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+{% extends "firstapp/base.html"%}
+{% block body_block %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <titl</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+
+body{
+    background-image:url("https://image.freepik.com/free-photo/dark-blue-product-background_53876-92801.jpg")
+
+}
+.text1{
+    color:#003366;
+}
+.box{
+   width:900px;
+   margin: 100px auto;
+   background: #fff;
+   border-radius: 7px;
+   box-shadow: 1px 2px 4px rgba(0,0,0,.3);
+}
+
+.box .heading{
+   background: #7800CF;
+   border-radius: 7px 7px 0px 0px;
+   padding: 10px;
+   color: #fff;
+   text-align: center;
+   font-family: "Rubik";
+}
+
+.faqs{
+   padding: 0px 20px 20px;
+}
+
+::-webkit-details-marker{
+   float: right;
+   margin-top: 2px;
+}
+
+details{
+   background: #f6f6f6;
+   padding: 10px 20px;
+   border-radius: 7px;
+   margin-top: 20px;
+   font-family: "Rubik";
+   font-size: 14px;
+   letter-spacing: 1px;
+   cursor: pointer;
+}
+
+details summary{
+   outline: none;
+}
+    </style>
+</head>
+<body>
+<div class="box">
+    <p class="heading">FAQs</p>
+    <div class="faqs">
+        <details>
+            <summary class="text1"><b>How to Register?</b></summary>
+            <div class="text1"><ol>
+            <li>go to signup page</li>
+            <li><a href="/signup">click the link</a></li>
+            <li>fill the form</li>
+            <li>enter the all required details in a prescribed format</li>
+            <li>click the submit button to register</li>
+        </ol></div>
+        </details>
+    <details>
+        <summary class="text1"><b>How to Should I donate?</b></summary>
+        <div class="text1">Go go Donate page and choose the payment methods and donate to the trust</div>
+    </details>
+    <details>
+        <summary class="text1"><b>How many children are there in trust?</b></summary>
+        <div class="text1">Present:ZERO</div>
+    </details>
+    <details>
+        <summary class="text1"><b>What is the purpose of this trust?</b></summary>
+        <div class="text1">Generally charitable trust's purpose is the one that benefits, improves, or uplifts humankind mentally, morally, or physically. The relief of poverty,and the advancement of religion, education, or health.<br><br><p><u>The purpose of</u></p><b>"Asha Jyothi Educational and Charitable Society"</b> helping the Poor around the world through the development of this Society in providing education to the child and shelter to the helpless people.We dont charge any administration costs,whatever donations you made will directly spend for trust needs...<br><p><b>THANK YOU!!!!!!!!!</b></p></div>
+    </details>
+    <details>
+        <summary class="text1"><b>Who are the founders?</b></summary>
+        <div class="text1">NERUGATTI JYOTHI<br>K CHANDRASEKHAR<br>NERUGATTI RAJU</div>
+    </details>
+    <details>
+        <summary class="text1"><b>Donators List?</b></summary>
+        <div class="text1">None</div>
+    </details>
+    </div>
+</div>
+</body>
+</html>
+{% endblock %}

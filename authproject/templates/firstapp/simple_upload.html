@@ -1,0 +1,21 @@
+{% extends "firstapp/base.html"%}
+{% block body_block %}
+<style>
+  .kk{
+    border:4px double white;
+    padding:20px;
+    margin-left:350px;
+    margin-right:350px;
+  }
+</style>
+<br><br><br><br><br><br><center><div class="kk">
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="myfile"><br><br>
+    <button type="submit">Upload</button>
+  </form>
+  {% if uploaded_file_url %}
+    <p>File uploaded at: <a href="{{ uploaded_file_url }}">{{ uploaded_file_url }}</a></p>
+  {% endif %}<br>
+  <p><a href="/home"><font color="white">Return to home</font></a></p></div></center>
+{% endblock %}

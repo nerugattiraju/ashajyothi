@@ -1,0 +1,24 @@
+{% extends "firstapp/base.html"%}
+{% block body_block %}
+<style>
+    body{
+    bgcolor:"#ffffff";
+    background-image:url("https://image.freepik.com/free-vector/elegant-white-background-with-shiny-lines_1017-17580.jpg");
+    }
+    .kkk{
+    margin-left:110px;
+    margin-right:110px;
+    border:5px double black;
+    padding:20px;
+    }
+
+</style>
+<body><br>
+<center><h2><font color="black" style="font-family:Times New Roman,vardana;"><b>ASHA JYOTHI EDUCATIONAL AND CHARITABLE SOCIETY</b></font></h2></center>
+<center><h5><font color="black" style="font-family:Times New Roman,vardana;"><b>RAMASAMUDRAM,CHITTOOR DIST,AP,PIN:517417</b></font></h5></center><hr><hr>
+<div class="kkk">
+    {%for item in dataa%}
+<br>
+    <p align="justify"><font color="black" style="font-family:Times New Roman,vardana;">{{item.data}}</font></p>
+    {% endfor %}<div><center><h4><i><font color="black"><strong>Special Thanks to........</strong></font></i><strong>"PAVITHRA"</h4></center></strong></div></div></body>
+{% endblock %}

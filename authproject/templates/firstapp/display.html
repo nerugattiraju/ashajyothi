@@ -1,0 +1,9 @@
+{% extends "firstapp/base.html"%}
+{% block body_block %}
+{% for item in objs %}
+    <tr>
+         <td>{{ item.description }}</td>
+        <td><a>{{ item.document }}</a></td>
+    </tr>
+       {% endfor %}
+{%endblock%}

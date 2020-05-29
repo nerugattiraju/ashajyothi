@@ -1,0 +1,30 @@
+{% extends "firstapp/base.html"%}
+{% block body_block %}
+<style>
+body{
+background-image:url("/static/images/upp.jpg");
+}
+  .container {
+        padding:20px;
+        background-color: gray;
+        max-width:470px;
+        border-radius:20px;
+        margin-left:800px;
+        box-sizing:border-box;
+        padding:60px;
+        color:#fff;
+        margin-top:18px;
+        background-image:url("/static/images/upp.jpg");
+        background-size:cover;
+    }
+</style>
+<body>
+  <form method="post" enctype="multipart/form-data">
+    <div class="container">
+    {{ form.as_p }}
+    {% csrf_token %}
+      <br><center><button type="submit">UPLOAD</button></center>
+  </form><br>
+  <center><p><a href="/home"><font color="white"><b>Return to home</b></font></a></p></center></div>
+</body>
+{% endblock %}

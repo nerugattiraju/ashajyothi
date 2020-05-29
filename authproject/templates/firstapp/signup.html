@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% extends "firstapp/base.html"%}
+{% block body_block %}
+<html>
+<head>
+<style>
+Body {
+  font-family: Calibri, Helvetica, sans-serif;
+  background-color: pink;
+  background-image:url("/static/images/plant.png");
+  }
+ .container {
+        padding:20px;
+        background-color: gray;
+        max-width:650px;
+        border-radius:20px;
+        margin-left:5px;
+        box-sizing:border-box;
+        padding:60px;
+        color:#fff;
+        margin-top:20px;
+        background-image:url("/static/images/sunset.jpg");
+        background-size:cover;
+    }
+</style>
+</head>
+<body>
+<form method="post">
+   <div class="container">
+       <center> <h1><font color="white"><strong><u><i>REGISTER HERE</i></u></strong></strong></font></h1> </center><br>
+       <center><font color="white"><b></b></center>
+   {{form.as_p}}
+           {%csrf_token%}</b></font>
+       <center><input type="submit" class="btn btn-primary" value="signup" width="600" height="150"></center>
+   </div>
+</form>
+</body>
+</html>
+{% endblock%}

@@ -1,0 +1,24 @@
+{% extends "firstapp/base.html"%}
+{% block body_block %}
+<style>
+    th{
+    padding:10px;
+    }
+    table, th, td {
+    border: 3px solid white;
+}
+body{
+background-image:url("https://images.all-free-download.com/images/graphicthumb/nostalgic_blue_background_06_hd_pictures_169782.jpg");
+}
+</style>
+<body><br><center>
+<center><h2><strong><font color="white" style="font-family:Times New Roman,vardana;">ASHA JYOTHI EDUCATIONAL AND CHARITABLE SOCIETY</font></strong></h2></center>
+    <center><h5><strong><font color="white" style="font-family:Times New Roman,vardana;">RAMASAMUDRAM,CHITTOOR DIST,AP,PIN:517417</font></strong></h5></center><hr><hr><br>
+    <h3><center><strong><font color="white" style="font-family:Times New Roman,vardana;">QUERIES OF VISITORS</font></center></h3>
+    <table width="1000px"><tr><th><font color="white"><center>NAME</center></font></th><th><font color="white"><center>EMAIL</center></font></th><th><font color="white"><center>MASSAGE</center></font></th><th><font color="white"><center>REPLY TO MAIL</center></font></th>
+{%for item in queries%}
+        <tr><td><font color="white" style="font-family:Times New Roman,vardana;"><center>{{item.Name}}</center></td><td><center><font color="white">{{item.Email}}</font></center></td><td><center><font color="white">{{item.Massage}}</font></center></td><td><center><a href="https://accounts.google.com/signin/v2/challenge/pwd?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%3Ftab%3Dwm&osid=1&service=mail&ltmpl=default&rm=false&flowName=GlifWebSignIn&flowEntry=AddSession&cid=1&navigationDirection=forward&TL=AM3QAYZ4nXyTQlOC6Jlfi4a3znQTHRttvmpYwfKAoY3oB-uLNBTmZs0YB4BfcwqS"><font color="white">REPLY</font></a></center></td></font>
+    {% endfor %}</tr></table></center>
+</body>
+
+{%endblock%}

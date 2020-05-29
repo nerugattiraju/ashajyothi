@@ -1,0 +1,27 @@
+{% extends "firstapp/base.html"%}
+{% block body_block %}
+<style>
+    th{
+    padding:10px;
+    }
+    table, th, td {
+    border: 3px solid white;
+}
+hr{
+border:1px double white;
+}
+body{
+    background-image:url("https://www.xmple.com/wallpaper/single-one-colour-solid-color-plain-azure-1920x1080-c-081c24-f-24.svg");
+    background-size:cover;
+}
+</style>
+<body><br><center>
+<center><h2><strong><font color="white" style="font-family:Times New Roman,vardana;">ASHA JYOTHI EDUCATIONAL AND CHARITABLE SOCIETY</font></strong></h2></center>
+    <center><h5><strong><font color="white" style="font-family:Times New Roman,vardana;">RAMASAMUDRAM,CHITTOOR DIST,AP,PIN:517417</font></strong></h5></center><hr><hr><br>
+    <h3><center><strong><font color="white" style="font-family:Times New Roman,vardana;">FILES AND DOCUMENTS</font></center></h3>
+    <table style="width:1000px"><tr><th><font color="white"><center>DOCUMENT</center></font></th><th><font color="white"><center>OPEN HERE</center></font></th>
+{%for item in files%}
+        <tr><td><font color="black" style="font-family:Times New Roman,vardana;"><center><img src="/static/images/logo5.png" height="220" width="280"></center></td><td><center><a href="{{item.image}}"><font color="white">CLICK HERE</font></a></center></td></td></font>
+    {% endfor %}</tr></table></center>
+</body>
+{% endblock %}

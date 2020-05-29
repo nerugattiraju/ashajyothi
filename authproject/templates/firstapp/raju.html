@@ -1,0 +1,27 @@
+{% extends "firstapp/base.html"%}
+{% block body_block %}
+<style>
+    th{
+    padding:10px;
+    }
+    table, th, td {
+    border: 4px solid white;
+}
+hr{
+border: 1px solid green;
+}
+body{
+background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTH9X6U54wGgAmL6DAg9z-V_KocXgsHwHdimvzgP0sTCoQxB0yE&usqp=CAU");
+
+}
+</style>
+<body><br><center>
+<center><h2><strong><font color="white" style="font-family:Times New Roman,vardana;">ASHA JYOTHI EDUCATIONAL AND CHARITABLE SOCIETY</font></strong></h2></center>
+    <center><h5><strong><font color="white" style="font-family:Times New Roman,vardana;">RAMASAMUDRAM,CHITTOOR DIST,AP,PIN:517417</font></strong></h5></center><hr><hr><br>
+    <h3><center><strong><font color="white" style="font-family:Times New Roman,vardana;">PICS OF ASHA JYOTHI</font></center></h3>
+    <table><tr><th><font color="white"><center>CHILD</center></font></th><th><font color="white"><center>OPEN HERE</center></font></th>
+{%for item in catch%}
+    <tr><td><font color="white" style="font-family:Times New Roman,vardana;"><img src="{{item.image}}" height="300" width="780"></td><td><a href="{{item.image}}">CLICK HERE</a></td></td></font>
+    {% endfor %}</tr></table></center>
+</body>
+{% endblock %}

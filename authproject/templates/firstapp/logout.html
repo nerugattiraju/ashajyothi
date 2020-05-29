@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% extends "firstapp/base.html" %}
+{% block body_block %}
+<style>
+{
+    background-image:url("https://wallpapercrafter.com/uploads/posts/23572-___sunset-grass-sunrise-and-meadow-hd.jpg")
+    }
+ .blinking{
+    animation:blinkingText 1.2s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: #000;    }
+    49%{    color: #000; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #000;    }
+}
+</style>
+<div class="jumbotron" align="center">
+  <div class="container">
+    <center><h1><font color="white"><strong>...................THANK YOU....................</strong></font></h1></center>
+    <br><br>
+        <div>
+            <img src="/static/images/hlogo.png" width="250" height="200">
+            <br>
+            <br>
+            <br>
+            <br>
+            <center><a class="btn btn-primary btn-success btn-lg" href="/accounts/login">VISIT AGAIN</a><center><p></p>
+            <br>
+            <br>
+
+        </div>
+    </center>
+    </div>
+{% endblock %}
